@@ -1,0 +1,184 @@
+:root {
+  font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+  color: #0f172a;
+  background: #f8fafc;
+  line-height: 1.5;
+}
+
+body {
+  margin: 0;
+}
+
+.app-shell {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+header {
+  margin-bottom: 1.5rem;
+}
+
+header h1 {
+  margin: 0 0 0.5rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.08);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  align-items: end;
+}
+
+.form-grid label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  gap: 0.35rem;
+}
+
+input,
+select,
+textarea,
+button {
+  font-family: inherit;
+}
+
+input,
+select,
+textarea {
+  padding: 0.6rem 0.75rem;
+  border: 1px solid #cbd5f5;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+button {
+  background: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+button:disabled {
+  opacity: 0.7;
+  cursor: wait;
+}
+
+button:not(:disabled):hover {
+  background: #1d4ed8;
+}
+
+.alert {
+  margin-top: 1rem;
+  border-left: 4px solid #f97316;
+  background: #fff7ed;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.alert h3,
+.alert h4 {
+  margin-top: 0;
+}
+
+.chapter-summary ul,
+.task-list,
+.alert ul {
+  padding-left: 1.1rem;
+}
+
+.quiz-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.quiz-grid label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-weight: 600;
+}
+
+.grid-two {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.task-list {
+  list-style: none;
+  padding-left: 0;
+  display: grid;
+  gap: 0.8rem;
+}
+
+.task-list li {
+  border: 1px solid #dbeafe;
+  border-radius: 10px;
+  padding: 0.75rem;
+  background: #eff6ff;
+}
+
+.task-week {
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.task-type {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: #1d4ed8;
+  margin-right: 0.5rem;
+}
+
+.task-due {
+  font-size: 0.85rem;
+  color: #475569;
+}
+
+.task-chapters {
+  margin-top: 0.35rem;
+}
+
+.error-banner {
+  background: #fee2e2;
+  color: #b91c1c;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+}
+
+footer {
+  margin-top: 2rem;
+  text-align: center;
+  color: #64748b;
+}
