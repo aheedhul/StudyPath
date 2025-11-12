@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+sqlmodel
+sqlalchemy
+aiosqlite
+pdfplumber
+PyPDF2
+python-multipart
+pydantic-settings
+python-dateutil
+httpx
